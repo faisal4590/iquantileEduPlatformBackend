@@ -8,7 +8,7 @@ class Videos extends Model
 {
     //
     protected $fillable = [
-        'video_author','video_path'
+        'video_author','video_path','video_description'
     ];
 
     

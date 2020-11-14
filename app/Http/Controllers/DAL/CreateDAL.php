@@ -14,10 +14,12 @@ class CreateDAL
     public function create_video($request)
     {
         $video_author = $request->video_author;
+        $video_description = $request->video_description;
         
         // Inserting videos
         $video = Videos::firstOrCreate([
-            'video_author' => $video_author
+            'video_author' => $video_author,
+            'video_description' => $video_description
         ]);
         // dd($video->id);
 

@@ -20,7 +20,7 @@ class CreateCommentsTable extends Migration
             $table->string('age')->nullable();
             $table->string('email')->nullable();
             $table->string('rating')->nullable();
-            $table->string('comment')->nullable();
+            $table->longText('comment')->nullable();
 
             $table->foreign('videos_id')->references('id')->on('videos')->onDelete('cascade');
 
